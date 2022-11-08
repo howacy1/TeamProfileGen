@@ -1,3 +1,4 @@
+// makes card for each employee with given info
 function makeCard(employeeArr) {
     let cardArr = [];
     for(i=0; i < employeeArr.length; i++) {
@@ -27,6 +28,7 @@ function makeCard(employeeArr) {
     return cardArr.join('');
 };
 
+// HTML layout
 function generateHTML(employeeArr) {
     return `
 <!DOCTYPE html>

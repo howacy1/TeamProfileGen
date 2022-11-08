@@ -10,6 +10,7 @@ function Profile() {
     this.employee;
 }
 
+// prompt for manager questions
 Profile.prototype.initializePrompt = function() {
     inquirer
         .prompt([
@@ -42,6 +43,7 @@ Profile.prototype.initializePrompt = function() {
         })
 };
 
+// prompt for adding team members
 Profile.prototype.secondPrompt = function() {
     inquirer
         .prompt({
@@ -61,6 +63,7 @@ Profile.prototype.secondPrompt = function() {
         })
 };
 
+// prompt for engineer
 Profile.prototype.engineerPrompt = function() {
     inquirer
     .prompt([
@@ -93,6 +96,7 @@ Profile.prototype.engineerPrompt = function() {
     })
 }
 
+// prompt for intern
 Profile.prototype.internPrompt = function() {
     inquirer
     .prompt([
@@ -125,6 +129,7 @@ Profile.prototype.internPrompt = function() {
     })
 };
 
+// writes html page to dist directory 
 Profile.prototype.writePage = function() {
     const pageHTML = generateHTML(this.employeeArr);
     fs.writeFile('./dist/index.html', pageHTML, err => {
