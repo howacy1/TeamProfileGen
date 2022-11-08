@@ -1,0 +1,10 @@
+header {
+    text-align: center;
+    height: 100px;
+    padding: 30px;
+    font-size: 40px;
+    background: linear-gradient(to bottom right, rgb(46, 185, 28), rgb(185, 181, 181));
+}
+.background {
+    background: linear-gradient(to bottom left, rgb(51, 161, 189), rgb(185, 181, 181));
+}
